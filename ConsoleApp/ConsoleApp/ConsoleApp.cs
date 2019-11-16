@@ -61,7 +61,7 @@ namespace ConsoleApp
 
         private void ConsoleApp_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (string.IsNullOrEmpty(txtConsoleNumber.Text))
+            if (!string.IsNullOrEmpty(txtConsoleNumber.Text))
                 SetScoreDetails(txtConsoleNumber.Text, txtScore.Text, "Idle", txtPlayerName.Text);
         }
 
